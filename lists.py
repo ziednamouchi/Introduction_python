@@ -35,4 +35,3 @@ mar=marxes[0]#first element
 mar1=marxes[1]#second element
 mar2=marxes[2]#third element
 print(mar, mar1, mar2)
-
