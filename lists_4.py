@@ -43,4 +43,4 @@ c=list(a)
 d=a[:]
 print(a,'\n',b,'\n',c)
 a[0] = 'integer lists are boring'
-print(a,'\n',b,'\n',c)#tonly a has changed
+print(a,'\n',b,'\n',c)#only a has changed
