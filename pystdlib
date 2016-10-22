@@ -1,0 +1,57 @@
+#The Python Standard Library
+#Handle Missing Keys with setdefault() and defaultdict()
+periodic_table = {'hydrogen':1,'helium':2}
+print(periodic_table)
+carbon = periodic_table.setdefault('carbon',12)#adding new value
+print(periodic_table)
+helium = periodic_table.setdefault('helium',943)#nothing happend because the key is existing
+print(periodic_table)
+from collections import defaultdict
+periodic_table = defaultdict(int)
+periodic_table['hydrogen']=1
+periodic_table['lead']
+periodic_table['nikel']
+print(periodic_table)
+from collections import defaultdict
+def no_idea():
+    return "huh?"
+bestiary = defaultdict(no_idea)
+bestiary['A'] = 'Abominable Snowman'
+bestiary['B'] = 'Basilisk'
+print(bestiary['A'])
+print(bestiary['C'])
+bestiary = defaultdict(lambda: 'heh!')
+print(bestiary['E'])
+from collections import defaultdict
+food_counter = defaultdict(int)
+for food in ['spam','spam','eggs','spam']:
+    food_counter[food]+=1
+print(food_counter)
+for food,count in food_counter.items():
+    print(food, count)
+#count items with counter()
+from collections import Counter
+breakfast = ['spam','spam','eggs','spam']
+breakfast_counter = Counter(breakfast)
+print(breakfast_counter)
+print(breakfast_counter.most_common())
+print(breakfast_counter.most_common(1))
+lunch = ['eggs','eggs','bacon']
+lunch_counter = Counter(lunch)
+print(lunch_counter)
+print(breakfast_counter + lunch_counter)
+#Order by Key with OrderedDict()
+quotes={
+     'moe':'a wise guy,huh?',
+     'larry':'ow!',
+     'curly':'nyuk nyuk!'}
+for stooge in quotes:
+    print(stooge)
+from collections import OrderedDict
+quotes = OrderedDict([
+    ('Moe', 'A wise guy, huh?'),
+    ('Larry', 'Ow!'),
+    ('Curly', 'Nyuk nyuk!'),
+    ])
+for stooge in quotes:
+    print("next ",stooge)
